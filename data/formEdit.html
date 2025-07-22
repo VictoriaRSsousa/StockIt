@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+        rel="stylesheet"
+        as="style"
+        onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <title>Stitch Design - New Product</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="stylesheet" href="/form.css"/>
+</head>
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#fcf8fa] group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header>
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"></path></svg>
+                    </div>
+                    <h2>Stock it</h2>
+                </div>
+            </header>
+
+            <div class="main-content-area">
+                <div class="layout-content-container">
+                    <div class="form-header">
+                        <h1>Update Product</h1>
+                    </div>
+
+                    <form id="productEditForm">
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="product-id">ID do Produto</label>
+                                <input type="text" id="productIdEdit" name="id" placeholder="Ex: item012" required>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="product-description">Descrição</label>
+                                <textarea id="productNameEdit" name="name" rows="3" placeholder="Ex: Caneta esferográfica azul, ponta fina"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-amount">Quantidade em Estoque</label>
+                                <input type="number" id="productAmountEdit" name="amount" min="0" placeholder="Ex: 150" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-critic">Estoque Crítico</label>
+                                <input type="number" id="productCriticEdit" name="critic" min="0" placeholder="Ex: 20" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-price">Preço de Venda (R$)</label>
+                                <input type="number" id="productPriceEdit" name="price" step="0.01" min="0" placeholder="Ex: 3.50" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-cost">Custo de Aquisição (R$)</label>
+                                <input type="number" id="productCostEdit" name="cost" step="0.01" min="0" placeholder="Ex: 1.80">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-category">Categoria</label>
+                                <select id="productCategoryEdit" name="category">
+                                    <option value="">Selecione uma categoria</option>
+                                    <option value="Canetas">Canetas</option>
+                                    <option value="Cadernos">Cadernos</option>
+                                    <option value="Lápis">Lápis</option>
+                                    <option value="Corretores e Borrachas">Corretores e Borrachas</option>
+                                    <option value="Acessórios">Acessórios</option>
+                                    <option value="Colas">Colas</option>
+                                    <option value="Blocos e Adesivos">Blocos e Adesivos</option>
+                                    <option value="Escritório">Escritório</option>
+                                    <option value="Desenho e Pintura">Desenho e Pintura</option>
+                                    <option value="Pastas e Arquivos">Pastas e Arquivos</option>
+                                    <option value="Outros">Outros</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-location">Localização no Estoque</label>
+                                <input type="text" id="productLocationEdit" name="location" placeholder="Ex: A1-01">
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button"  id="cancelEditButton" class="cancel-button">Cancelar</button>
+                            <button type="submit"  id="submitEditButton" class="submit-button">Editar Produto</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="/form.js" ></script>
+</body>
+</html>

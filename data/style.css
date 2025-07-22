@@ -1,0 +1,527 @@
+body {
+    margin: 0;
+    font-family: "Work Sans", "Noto Sans", sans-serif;
+    background-color: #fcf8fa;
+    color: #1b0e14;
+}
+
+.relative {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.size-full {
+    width: 100%;
+    height: 100%;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    border-bottom: 1px solid #f3e7ed;
+    padding: 12px 40px; /* py-3 px-10 */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* gap-4 */
+}
+
+header .logo-icon {
+    width: 16px; /* size-4 */
+    height: 16px; /* size-4 */
+    color: #1b0e14;
+}
+
+header h2 {
+    color: #1b0e14;
+    font-size: 18px; /* text-lg */
+    font-weight: 700; /* font-bold */
+    line-height: 1.25; /* leading-tight */
+    letter-spacing: -0.015em;
+    margin: 0;
+}
+
+header .nav-and-actions {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 32px; /* gap-8 */
+}
+
+header .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 36px; /* gap-9 */
+}
+
+header .nav-links a {
+    color: #1b0e14;
+    font-size: 14px; /* text-sm */
+    font-weight: 500; /* font-medium */
+    line-height: 1.5; /* leading-normal */
+    text-decoration: none;
+}
+
+header .action-button {
+    display: flex;
+    max-width: 480px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px; /* rounded-lg */
+    height: 40px; /* h-10 */
+    background-color: #f3e7ed;
+    color: #1b0e14;
+    gap: 8px; /* gap-2 */
+    font-size: 14px; /* text-sm */
+    font-weight: 700; /* font-bold */
+    line-height: 1.5; /* leading-normal */
+    letter-spacing: 0.015em;
+    min-width: 0;
+    padding: 0 10px; /* px-2.5 */
+    border: none;
+}
+
+header .action-button svg {
+    color: #1b0e14;
+    width: 20px;
+    height: 20px;
+}
+
+header .profile-picture {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 9999px; /* rounded-full */
+    width: 40px; /* size-10 */
+    height: 40px; /* size-10 */
+}
+
+/* Main Content Area */
+.main-content-area {
+    padding: 20px 160px; /* py-5 px-40 */
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.layout-content-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    flex: 1;
+}
+
+.products-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px; /* gap-3 */
+    padding: 16px; /* p-4 */
+}
+
+.products-header h1 {
+    color: #1b0e14;
+    letter-spacing: -0.01em; /* tracking-light */
+    font-size: 32px; /* text-[32px] */
+    font-weight: 700; /* font-bold */
+    line-height: 1.25; /* leading-tight */
+    min-width: 288px; /* min-w-72 */
+    margin: 0;
+}
+
+.add-product-button {
+    display: flex;
+    min-width: 84px;
+    max-width: 480px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px; /* rounded-lg */
+    height: 32px; /* h-8 */
+    padding: 0 16px; /* px-4 */
+    background-color: #f3e7ed;
+    color: #1b0e14;
+    font-size: 14px; /* text-sm */
+    font-weight: 500; /* font-medium */
+    line-height: 1.5; /* leading-normal */
+    border: none;
+}
+
+.add-product-button span {
+    white-space: nowrap; /* truncate */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Table Container */
+.table-container-wrapper {
+    padding: 12px 16px; /* py-3 px-4 */
+    position: relative; /* For @container query simulation */
+}
+
+.table-container {
+    display: flex;
+    overflow: hidden;
+    border-radius: 8px; /* rounded-lg */
+    border: 1px solid #e7d0db;
+    background-color: #fcf8fa;
+}
+
+table {
+    flex: 1;
+    width: 100%; /* Ensure table takes full width */
+    border-collapse: collapse; /* For clean borders */
+}
+
+table thead tr {
+    background-color: #fcf8fa;
+}
+
+table th,
+table td {
+    padding: 12px 16px; /* px-4 py-3 for th, px-4 py-2 for td */
+    text-align: left;
+    font-size: 14px; /* text-sm */
+    line-height: 1.5; /* leading-normal */
+    white-space: nowrap; /* Prevent wrapping in table cells */
+}
+
+table th {
+    color: #1b0e14;
+    font-weight: 500; /* font-medium */
+}
+
+table td {
+    height: 72px; /* h-[72px] */
+    color: #1b0e14;
+    font-weight: 400; /* font-normal */
+    border-top: 1px solid #e7d0db;
+}
+
+table td.quantity,
+table td.price {
+    color: #974e73;
+}
+
+table td.actions {
+    color: #974e73;
+    font-weight: 700; /* font-bold */
+    letter-spacing: 0.015em;
+}
+
+/* Column widths */
+.column-product-name,
+.column-quantity,
+.column-price {
+    width: 400px;
+}
+
+.column-actions {
+    width: 240px; /* w-60 */
+}
+
+/* Responsive table columns (simplified, as pure CSS @container is complex) */
+/* For a true @container query effect, you'd need JavaScript or more complex CSS.
+    This is a simplified media query example, roughly simulating based on overall container width. */
+@media (max-width: 960px) { /* Adjust based on your responsive needs */
+    .main-content-area {
+        padding: 20px 20px; /* Reduce padding on smaller screens */
+    }
+    .column-product-name,
+    .column-quantity,
+    .column-price,
+    .column-actions {
+        width: auto; /* Allow columns to shrink */
+    }
+    table th, table td {
+        padding: 8px 10px; /* Smaller padding for tighter fit */
+    }
+}
+
+/* @media (max-width: 768px) {
+    .products-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .products-header h1 {
+        min-width: unset;
+    }
+    .add-product-button {
+        width: 100%;
+    }
+    .nav-links {
+        display: none; /* Hide nav links on smaller screens */
+    /* }
+    .action-button {
+        display: none; /* Hide bell button */
+    /* }
+}  */
+
+
+@media (max-width: 768px) {
+    /* Mantenha o que já estava aqui para o header e botões */
+    .products-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .products-header h1 {
+        min-width: unset;
+    }
+    .add-product-button {
+        width: 100%;
+    }
+    .nav-links {
+        display: none;
+    }
+    .action-button {
+        display: none;
+    }
+
+    /* OTIMIZAÇÃO: Remove o overflow-x: auto do .table-container,
+       já que estamos transformando em blocos e não precisamos de scroll horizontal para isso. */
+    .table-container {
+        overflow: visible; /* Garante que não haja recorte */
+    }
+
+    /* Torna a tabela, cabeçalhos, corpo e linhas em blocos */
+    table,
+    table thead,
+    table tbody,
+    table tr {
+        display: block;
+        width: 100%; /* Garante que ocupem 100% da largura disponível */
+    }
+
+    /* Esconde o cabeçalho original da tabela (acessível por leitores de tela) */
+    table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    /* Estilo para cada "cartão" (antiga linha da tabela) */
+    table tr {
+        border: 1px solid #e7d0db;
+        margin-bottom: 15px; /* Espaçamento entre os cartões */
+        border-radius: 8px;
+        background-color: #fcf8fa;
+        padding: 15px; /* Padding interno para o conteúdo do cartão */
+        box-sizing: border-box; /* Garante que padding não aumente a largura */
+        display: flex; /* Transforma a linha em um container flex para seus itens */
+        flex-direction: column; /* Empilha os itens verticalmente */
+        position: relative; /* Para posicionar os ícones de ação de forma absoluta, se preferir */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Uma sombra leve para destacar os cartões */
+    }
+
+    /* Estilo para cada célula (agora um item dentro do "cartão") */
+    table td {
+        border: none; /* Remove bordas entre as "células" dentro do cartão */
+        padding: 5px 0; /* Ajusta padding interno das células */
+        text-align: left; /* Alinha o texto do valor à esquerda */
+        height: auto; /* Permite altura flexível */
+        white-space: normal; /* Permite que o texto quebre linha */
+        display: flex; /* Para alinhar rótulo e valor na mesma linha */
+        justify-content: space-between; /* Espaço entre rótulo e valor */
+        align-items: flex-start; /* Alinha no topo se o conteúdo for longo */
+        line-height: 1.4; /* Ajusta espaçamento entre linhas do texto */
+    }
+
+    /* Estilo para o rótulo da célula (o "data-label") */
+    table td::before {
+        content: attr(data-label);
+        font-weight: 600; /* Um pouco mais de peso para o rótulo */
+        color: #1b0e14;
+        flex-basis: 40%; /* Dá ao rótulo um espaço fixo, ajuste conforme necessário */
+        min-width: 80px; /* Garante que o rótulo tenha um mínimo de largura */
+        text-align: left;
+        padding-right: 10px; /* Espaço entre o rótulo e o valor */
+        box-sizing: border-box;
+    }
+
+    /* Estilo para o valor da célula */
+    table td span { /* Envolver o valor em um <span> se precisar de estilo individual */
+        flex-grow: 1; /* Permite que o valor ocupe o restante do espaço */
+        text-align: right; /* Alinha o valor à direita */
+    }
+
+    /* Exemplo de como você pode estilizar os dados específicos */
+    table td.quantity {
+        color: #974e73;
+        font-weight: 500;
+    }
+    table td.price {
+        color: #974e73;
+        font-weight: 500;
+    }
+
+    /* Estilo específico para a célula de Ações */
+    table td.actions {
+        /* Garante que os ícones de ação fiquem no final do cartão */
+        display: flex;
+        justify-content: flex-end; /* Alinha os botões à direita dentro do cartão */
+        gap: 15px; /* Espaço entre os ícones */
+        padding: 10px 0 0 0; /* Padding superior para separar das informações */
+        margin-top: 10px;
+        border-top: 1px solid #f3e7ed; /* Uma linha para separar as ações */
+    }
+
+    table td.actions::before {
+        content: none; /* Remove o rótulo "Ações" para esta célula */
+    }
+
+    /* Ajuste para os ícones de ação se eles estiverem dentro de botões ou links */
+    table td.actions button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        color: #974e73; /* Cor dos ícones de ação */
+        display: flex; /* Para centralizar o SVG se for o caso */
+        align-items: center;
+        justify-content: center;
+        width: 30px; /* Tamanho dos botões de ação */
+        height: 30px;
+        font-size: 0; /* Esconde o texto do botão se houver, deixando só o ícone */
+        outline: none; /* Remove o contorno de foco padrão */
+    }
+    table td.actions button svg {
+        width: 20px;
+        height: 20px;
+        color: #974e73; /* Cor dos SVGs */
+    }
+}
+
+
+.popover-overlay {
+    /* REMOVA o segundo 'display: flex;' que estava aqui */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    
+    /* Esta linha é crucial para ESCONDER o popover por padrão */
+    /* e será sobrescrita pela classe 'visible' quando o JS a adicionar */
+    display: none; 
+    
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top of other content */
+
+    /* Adicione estas propriedades para uma transição suave de visibilidade */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popover-overlay.visible {
+    display: flex; /* Apenas AQUI o display: flex deve ser ativado */
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Popover Content */
+.popover-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    transform: scale(0.95); /* Começa um pouco menor para a animação */
+    transition: transform 0.3s ease;
+}
+.popover-overlay.visible .popover-content {
+    transform: scale(1); /* Escala para o tamanho normal ao aparecer */
+}
+.popover-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1b0e14;
+    margin-bottom: 15px;
+}
+
+.popover-message {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.popover-message #productToDeleteName {
+    font-weight: 600;
+    color: #974e73; /* Cor rosa para o nome do produto */
+}
+
+/* Popover Actions (Buttons) */
+.popover-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.popover-actions button {
+    cursor: pointer;
+    border-radius: 8px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border: none;
+}
+
+.popover-actions .cancel-button {
+    background-color: #f3e7ed; /* Light pink */
+    color: #1b0e14;
+}
+
+.popover-actions .cancel-button:hover {
+    background-color: #e7d0db;
+}
+
+.popover-actions .delete-button {
+    background-color: #dc3545; /* Um vermelho para exclusão */
+    color: #ffffff; /* Texto branco */
+}
+
+.popover-actions .delete-button:hover {
+    background-color: #c82333;
+}

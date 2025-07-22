@@ -1,0 +1,114 @@
+{
+  "itens": [
+    {
+      "id": "item001",
+      "name": "Caneta Spiro",
+      "amount": 150,
+      "critic": 20,
+      "price": 3.50,
+      "cost": 1.80,
+      "category": "Canetas",
+      "location": "A1-01"
+    },
+    {
+      "id": "item002",
+      "name": "Caderno Universitário 96fls",
+      "amount": 80,
+      "critic": 15,
+      "price": 18.99,
+      "cost": 9.50,
+      "category": "Cadernos",
+      "location": "B2-05"
+    },
+    {
+      "id": "item003",
+      "name": "Lápis de Cor Faber-Castell 12 Cores",
+      "amount": 60,
+      "critic": 10,
+      "price": 25.00,
+      "cost": 13.00,
+      "category": "Lápis",
+      "location": "C3-02"
+    },
+    {
+      "id": "item004",
+      "name": "Borracha Branca Mercur",
+      "amount": 200,
+      "critic": 30,
+      "price": 2.00,
+      "cost": 0.80,
+      "category": "Corretores e Borrachas",
+      "location": "A1-03"
+    },
+    {
+      "id": "item005",
+      "name": "Apontador com Depósito Leo&Leo",
+      "amount": 120,
+      "critic": 25,
+      "price": 4.50,
+      "cost": 1.90,
+      "category": "Acessórios",
+      "location": "A2-01"
+    },
+    {
+      "id": "item006",
+      "name": "Cola Bastão Pritt 20g",
+      "amount": 90,
+      "critic": 15,
+      "price": 7.80,
+      "cost": 3.50,
+      "category": "Colas",
+      "location": "D1-04"
+    },
+    {
+      "id": "item007",
+      "name": "Post-it Amarelo 76x76mm",
+      "amount": 180,
+      "critic": 25,
+      "price": 10.50,
+      "cost": 4.90,
+      "category": "Blocos e Adesivos",
+      "location": "E1-01"
+    },
+    {
+      "id": "item008",
+      "name": "Grampeador Pequeno Maped",
+      "amount": 40,
+      "critic": 5,
+      "price": 35.00,
+      "cost": 18.00,
+      "category": "Escritório",
+      "location": "F1-03"
+    },
+    {
+      "id": "item009",
+      "name": "Giz de Cera Acrilex 12 Cores",
+      "amount": 70,
+      "critic": 10,
+      "price": 15.00,
+      "cost": 7.00,
+      "category": "Desenho e Pintura",
+      "location": "C3-03"
+    },
+    {
+      "id": "item010",
+      "name": "Pasta L Fina Transparente",
+      "amount": 250,
+      "critic": 40,
+      "price": 1.20,
+      "cost": 0.50,
+      "category": "Pastas e Arquivos",
+      "location": "G1-02"
+    },
+    {
+      "id": "item011",
+      "name": "Tesoura Escolar Sem Ponta",
+      "amount": 100,
+      "critic": 15,
+      "price": 8.00,
+      "cost": 3.80,
+      "category": "Acessórios",
+      "location": "A2-02"
+    }
+  ]
+}
