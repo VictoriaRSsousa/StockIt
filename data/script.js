@@ -3,7 +3,7 @@ let currentProductIdToDelete = null; // Variável para armazenar o ID do produto
 let currentProductNameToDelete = null;
 
 async function getItems() {
-  response = await fetch('http://192.168.107.122/api/inventory')
+  response = await fetch('/api/inventory')
   const json = await response.json();
   itens = json.itens
 }

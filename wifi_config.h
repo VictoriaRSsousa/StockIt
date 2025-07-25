@@ -1,11 +1,12 @@
 #ifndef WIFI_CONFIG_H
 #define WIFI_CONFIG_H
 
-#include <ESPmDNS.h>
 #include <WiFi.h>
 
-const char* ssid = "IFCE";
-const char* password = "ifcewifi";
+//const char* ssid = "MARCILEY";
+//const char* password = "86697070";
+const char* ssid = "iPhone";
+const char* password = "123456789";
 
 void connectToWiFi() {
   WiFi.disconnect(true);
